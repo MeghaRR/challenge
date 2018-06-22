@@ -7,11 +7,11 @@ import java.util.List;
 public class InrhythmChallenge {
 	// assuming input string doesnt have punctuation to deal with.
     // for e.g. didn't has a non alpha char but its part of the word.
-    // whitespace can be combined with terminators like ? ! . or separators like , ;
     public static MaxLengthWords getMaxLengthWords(final String string)
     {
-        if (string == null || string.isEmpty())
-        { return new MaxLengthWords(0,Collections.<String>emptyList()); }
+        if (string == null || string.isEmpty()) { 
+        	return new MaxLengthWords(0,Collections.<String>emptyList()); 
+        }
 
         List<String> maxLengthWords = new ArrayList<>();
 
